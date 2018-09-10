@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		03629F5591E62D1773676F34 /* Pods_flixster.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E11873A31807FB9C9C74E9F /* Pods_flixster.framework */; };
 		D9A0F1CC21470AAD00AF6383 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9A0F1CB21470AAD00AF6383 /* AppDelegate.swift */; };
-		D9A0F1CE21470AAD00AF6383 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9A0F1CD21470AAD00AF6383 /* ViewController.swift */; };
+		D9A0F1CE21470AAD00AF6383 /* NowPlayingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9A0F1CD21470AAD00AF6383 /* NowPlayingViewController.swift */; };
 		D9A0F1D121470AAD00AF6383 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D9A0F1CF21470AAD00AF6383 /* Main.storyboard */; };
 		D9A0F1D321470AAF00AF6383 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D9A0F1D221470AAF00AF6383 /* Assets.xcassets */; };
 		D9A0F1D621470AAF00AF6383 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D9A0F1D421470AAF00AF6383 /* LaunchScreen.storyboard */; };
@@ -21,7 +21,7 @@
 		854AF6BE749B87D4381B4B06 /* Pods-flixster.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-flixster.debug.xcconfig"; path = "Pods/Target Support Files/Pods-flixster/Pods-flixster.debug.xcconfig"; sourceTree = "<group>"; };
 		D9A0F1C821470AAD00AF6383 /* flixster.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = flixster.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D9A0F1CB21470AAD00AF6383 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		D9A0F1CD21470AAD00AF6383 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D9A0F1CD21470AAD00AF6383 /* NowPlayingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NowPlayingViewController.swift; sourceTree = "<group>"; };
 		D9A0F1D021470AAD00AF6383 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D9A0F1D221470AAF00AF6383 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D9A0F1D521470AAF00AF6383 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -78,8 +78,8 @@
 		D9A0F1CA21470AAD00AF6383 /* flixster */ = {
 			isa = PBXGroup;
 			children = (
+				D9A0F1CD21470AAD00AF6383 /* NowPlayingViewController.swift */,
 				D9A0F1CB21470AAD00AF6383 /* AppDelegate.swift */,
-				D9A0F1CD21470AAD00AF6383 /* ViewController.swift */,
 				D9A0F1CF21470AAD00AF6383 /* Main.storyboard */,
 				D9A0F1D221470AAF00AF6383 /* Assets.xcassets */,
 				D9A0F1D421470AAF00AF6383 /* LaunchScreen.storyboard */,
@@ -162,15 +162,11 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-			);
 			inputPaths = (
 				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
 				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/Pods-flixster-checkManifestLockResult.txt",
 			);
@@ -184,16 +180,12 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-flixster/Pods-flixster-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/AlamofireImage/AlamofireImage.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-			);
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireImage.framework",
@@ -210,7 +202,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D9A0F1CE21470AAD00AF6383 /* ViewController.swift in Sources */,
+				D9A0F1CE21470AAD00AF6383 /* NowPlayingViewController.swift in Sources */,
 				D9A0F1CC21470AAD00AF6383 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
