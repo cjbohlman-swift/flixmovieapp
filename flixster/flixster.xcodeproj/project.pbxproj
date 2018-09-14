@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		03629F5591E62D1773676F34 /* Pods_flixster.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E11873A31807FB9C9C74E9F /* Pods_flixster.framework */; };
+		D9164D2D2149BED800FEBFD1 /* MovieCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9164D2C2149BED800FEBFD1 /* MovieCell.swift */; };
 		D9A0F1CC21470AAD00AF6383 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9A0F1CB21470AAD00AF6383 /* AppDelegate.swift */; };
 		D9A0F1CE21470AAD00AF6383 /* NowPlayingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9A0F1CD21470AAD00AF6383 /* NowPlayingViewController.swift */; };
 		D9A0F1D121470AAD00AF6383 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D9A0F1CF21470AAD00AF6383 /* Main.storyboard */; };
@@ -19,6 +20,7 @@
 		0E11873A31807FB9C9C74E9F /* Pods_flixster.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_flixster.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5B67676EAB61A7667BAA5AEE /* Pods-flixster.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-flixster.release.xcconfig"; path = "Pods/Target Support Files/Pods-flixster/Pods-flixster.release.xcconfig"; sourceTree = "<group>"; };
 		854AF6BE749B87D4381B4B06 /* Pods-flixster.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-flixster.debug.xcconfig"; path = "Pods/Target Support Files/Pods-flixster/Pods-flixster.debug.xcconfig"; sourceTree = "<group>"; };
+		D9164D2C2149BED800FEBFD1 /* MovieCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieCell.swift; sourceTree = "<group>"; };
 		D9A0F1C821470AAD00AF6383 /* flixster.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = flixster.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D9A0F1CB21470AAD00AF6383 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D9A0F1CD21470AAD00AF6383 /* NowPlayingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NowPlayingViewController.swift; sourceTree = "<group>"; };
@@ -60,6 +62,7 @@
 		D9A0F1BF21470AAD00AF6383 = {
 			isa = PBXGroup;
 			children = (
+				D9164D2C2149BED800FEBFD1 /* MovieCell.swift */,
 				D9A0F1CA21470AAD00AF6383 /* flixster */,
 				D9A0F1C921470AAD00AF6383 /* Products */,
 				429C1ADEA95E28580B47ECAB /* Pods */,
@@ -204,6 +207,7 @@
 			files = (
 				D9A0F1CE21470AAD00AF6383 /* NowPlayingViewController.swift in Sources */,
 				D9A0F1CC21470AAD00AF6383 /* AppDelegate.swift in Sources */,
+				D9164D2D2149BED800FEBFD1 /* MovieCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
