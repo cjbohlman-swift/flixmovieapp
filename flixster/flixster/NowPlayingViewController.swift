@@ -17,9 +17,10 @@ class NowPlayingViewController: UIViewController, UITableViewDataSource {
     var refreshControl: UIRefreshControl!
     @IBOutlet weak var loadingIndicator: UIActivityIndicatorView!
     
+    let alertController = UIAlertController(title: "Network Error", message: "Flix cannot connect to the Internet. Please check your connection and try again.", preferredStyle: .alert)
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         loadingIndicator.hidesWhenStopped = true
         loadingIndicator.startAnimating()
         
@@ -30,9 +31,16 @@ class NowPlayingViewController: UIViewController, UITableViewDataSource {
         tableView.dataSource = self
         tableView.rowHeight = 280
         
+        // create an OK action
+        let OKAction = UIAlertAction(title: "Try Again", style: .default) { (action) in
+            self.fetchMovies()
+        }
+        // add the OK action to the alert controller
+        alertController.addAction(OKAction)
+        
         
         fetchMovies()
-        loadingIndicator.stopAnimating()
+        
     }
     
     @objc func didPullToRefresh(_ refreshControl: UIRefreshControl) {
@@ -45,7 +53,9 @@ class NowPlayingViewController: UIViewController, UITableViewDataSource {
         let session = URLSession(configuration: .default, delegate: nil, delegateQueue: OperationQueue.main)
         let task = session.dataTask(with: request) { (data, response, error) in
             if let error = error {
+                self.present(self.alertController, animated: true, completion: nil)
                 print(error.localizedDescription)
+                return
             } else if let data = data {
                 let dataDictionary = try! JSONSerialization.jsonObject(with: data, options: []) as! [String: Any]
                 print(dataDictionary)
@@ -54,6 +64,7 @@ class NowPlayingViewController: UIViewController, UITableViewDataSource {
                 self.tableView.reloadData()
                 self.refreshControl.endRefreshing()
             }
+            self.loadingIndicator.stopAnimating()
         }
         task.resume()
     }
@@ -82,7 +93,7 @@ class NowPlayingViewController: UIViewController, UITableViewDataSource {
         let baseURLString = "https://image.tmdb.org/t/p/w500"
         let posterURL = URL(string: baseURLString + posterPathString)!
         cell.movieImageView.af_setImage(withURL: posterURL)
-        
+        cell.separatorInset = UIEdgeInsetsMake(0, 1000, 0, 0)
         return cell
     }
 
