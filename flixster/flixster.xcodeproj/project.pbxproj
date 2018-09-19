@@ -11,6 +11,7 @@
 		D9164D2D2149BED800FEBFD1 /* MovieCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9164D2C2149BED800FEBFD1 /* MovieCell.swift */; };
 		D981424B21504A5F00F14D93 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D981424A21504A5F00F14D93 /* DetailViewController.swift */; };
 		D981424D2150517600F14D93 /* PosterCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D981424C2150517600F14D93 /* PosterCell.swift */; };
+		D981424F215052A200F14D93 /* SuperheroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D981424E215052A200F14D93 /* SuperheroViewController.swift */; };
 		D9A0F1CC21470AAD00AF6383 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9A0F1CB21470AAD00AF6383 /* AppDelegate.swift */; };
 		D9A0F1CE21470AAD00AF6383 /* NowPlayingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9A0F1CD21470AAD00AF6383 /* NowPlayingViewController.swift */; };
 		D9A0F1D121470AAD00AF6383 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D9A0F1CF21470AAD00AF6383 /* Main.storyboard */; };
@@ -25,6 +26,7 @@
 		D9164D2C2149BED800FEBFD1 /* MovieCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieCell.swift; sourceTree = "<group>"; };
 		D981424A21504A5F00F14D93 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		D981424C2150517600F14D93 /* PosterCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PosterCell.swift; sourceTree = "<group>"; };
+		D981424E215052A200F14D93 /* SuperheroViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuperheroViewController.swift; sourceTree = "<group>"; };
 		D9A0F1C821470AAD00AF6383 /* flixster.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = flixster.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D9A0F1CB21470AAD00AF6383 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D9A0F1CD21470AAD00AF6383 /* NowPlayingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NowPlayingViewController.swift; sourceTree = "<group>"; };
@@ -88,6 +90,7 @@
 			children = (
 				D9A0F1CD21470AAD00AF6383 /* NowPlayingViewController.swift */,
 				D981424C2150517600F14D93 /* PosterCell.swift */,
+				D981424E215052A200F14D93 /* SuperheroViewController.swift */,
 				D9A0F1CB21470AAD00AF6383 /* AppDelegate.swift */,
 				D9A0F1CF21470AAD00AF6383 /* Main.storyboard */,
 				D9A0F1D221470AAF00AF6383 /* Assets.xcassets */,
@@ -213,6 +216,7 @@
 			files = (
 				D9A0F1CE21470AAD00AF6383 /* NowPlayingViewController.swift in Sources */,
 				D981424D2150517600F14D93 /* PosterCell.swift in Sources */,
+				D981424F215052A200F14D93 /* SuperheroViewController.swift in Sources */,
 				D9A0F1CC21470AAD00AF6383 /* AppDelegate.swift in Sources */,
 				D9164D2D2149BED800FEBFD1 /* MovieCell.swift in Sources */,
 				D981424B21504A5F00F14D93 /* DetailViewController.swift in Sources */,
