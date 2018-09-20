@@ -129,7 +129,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kR6-h5-WfQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2212" y="-580.65967016491754"/>
+            <point key="canvasLocation" x="2658" y="-216"/>
         </scene>
         <!--Now Playing-->
         <scene sceneID="KQL-8k-WDT">
@@ -206,6 +206,7 @@
                                         </view>
                                         <connections>
                                             <outlet property="posterImageView" destination="aRV-yI-Q3i" id="bvC-Ou-mv8"/>
+                                            <segue destination="IRs-3d-wcN" kind="show" id="qfC-iG-xdg"/>
                                         </connections>
                                     </collectionViewCell>
                                 </cells>
@@ -236,7 +237,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Dy9-My-ajG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1468" y="104"/>
+            <point key="canvasLocation" x="2308" y="1074"/>
         </scene>
         <!--Poster-->
         <scene sceneID="hBo-Mw-DdW">
@@ -262,4 +263,7 @@
         <image name="now_playing_tabbar_item" width="21" height="21"/>
         <image name="superhero_tabbar_item" width="21" height="23"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="vLt-mU-kNB"/>
+    </inferredMetricsTieBreakers>
 </document>
