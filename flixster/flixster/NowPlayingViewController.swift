@@ -17,6 +17,7 @@ class NowPlayingViewController: UIViewController, UITableViewDataSource {
     var refreshControl: UIRefreshControl!
     @IBOutlet weak var loadingIndicator: UIActivityIndicatorView!
     
+    
     let alertController = UIAlertController(title: "Network Error", message: "Flix cannot connect to the Internet. Please check your connection and try again.", preferredStyle: .alert)
     
     override func viewDidLoad() {
